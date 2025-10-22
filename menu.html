@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website UMKM</title>
+  <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+    
+      <h1 class="logo">Emping Khafidin</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><button class="logout-btn" onclick="logout()">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Temukan Cita Rasa Asli</h1>
+        <p>Nikmati Emping Khas Limpung yang Gurih dan Autentik</p>
+        <a href="#menu" class="btn">Telusuri Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container about-wrapper">
+      <div class="about-img">
+        <img src="Image/kemasan.png" alt="Tentang Emping">
+      </div>
+      <div class="about-text">
+        <h2>Tentang<span> Emping Melinjo</span></h2>
+        <p>Emping kami dibuat dari biji melinjo pilihan yang diproses secara tradisional untuk mempertahankan rasa khasnya,
+           Yang disukai Konsumen Dari Berbagai Daerah.
+        </p>
+        <p>Nikmati rasa gurih, renyah, dan tidak pahit yang membuat emping kami unik.</p>
+        <a href="#menu" class="about-btn">Lihat Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section menu">
+    <h2>Daftar Menu Emping</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="Image/4.jpg" alt="Emping Basah">
+        <div class="menu-info">
+          <h3>Emping Basah</h3>
+          <p>Emping segar yang baru dibuat setiap hari.</p>
+          <p class="price">Rp 25.000/kg</p>
+              <button class="order-btn" onclick="pesan()">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="Image/2.jpg" alt="Emping Kering">
+        <div class="menu-info">
+          <h3>Biji Melinjo Matang</h3>
+          <p>Biji pilihan yang telah dimasak siap olah.</p>
+          <p class="price">Rp 20.000/kg</p>
+          <button class="order-btn" onclick="pesan()">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="Image/1.jpg" alt="Biji Melinjo">
+        <div class="menu-info">
+          <h3>Biji Melinjo Mentah</h3>
+          <p>Biji Mentah Pilihan Dan Berkualitas</p>
+          <p class="price">Rp 10.000/kg</p>
+          <button class="order-btn" onclick="pesan()">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <p>Jika ada pertanyaan atau ingin memesan, silakan kirim pesan melalui formulir berikut.</p>
+      <form class="contact-form">
+        <input type="text" id="nama" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea id="pesan" placeholder="Pesan Anda" rows="4" required></textarea>
+        <button type="submit" class="btn" onclick="kirim()">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Alamat: DK.Kebonwaru Kec.Tersono</h3>
+    <p>© 2025 Emping Khafidin — Dibuat oleh Excell</p>
+  </footer>
+</body>
+</html>s
